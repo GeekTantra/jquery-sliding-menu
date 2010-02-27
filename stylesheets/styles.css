@@ -1,0 +1,59 @@
+body {
+  font-family: "Arial","Verdana","Helvetica";
+  font-size: 0.9em;
+  margin: 1.5em;
+  background: #0059cf url('../images/bg.jpg') no-repeat top center;
+  color: #FFF;
+}
+#Wrapper {
+  width: 900px;
+  margin: auto;
+}
+ul.SlidingMenu {
+  list-style: none;
+  padding: 0em;
+  position: relative;
+}
+ul.SlidingMenu a {
+  display: inline-block;
+  padding: 0.62em 1.5em;
+  text-decoration: none;
+  color: #FFF;
+  position: relative;
+  outline: none;
+}
+ul.SlidingMenu li.Background {
+  background: #555;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+}
+* html ul.SlidingMenu li.Background {
+  z-index: -10;
+}
+*:first-child+html li.Background {
+  z-index: -10;
+}
+ul.Horizontal li {
+  float: left;
+}
+.ClearFix {
+  clear: both;
+}
+#HorizontalSlidingMenu {
+  background: url('../images/menubg.png') top left repeat-x;
+}
+#HorizontalSlidingMenu li.Background {
+  background: url('../images/bg_menu_right.png') top right no-repeat;
+}
+#HorizontalSlidingMenu li.Background div{
+  background: url('../images/bg_menu.png') top left no-repeat;
+  height: 100%;
+  margin-right: 31px;
+}
+#VerticalSlidingMenu {
+  float: left;
+}
+#VerticalSlidingMenu li.Background {
+  background: #00A;
+}
+
