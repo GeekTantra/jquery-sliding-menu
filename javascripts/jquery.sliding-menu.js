@@ -1,3 +1,7 @@
+/**
+ * @author GeekTantra
+ * @date 28 February 2010
+ */
 (function(jQuery){
   jQuery.fn.slidingMenu = function(options) {
     options = jQuery.extend({
