@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title></title>
+<title>jQuery Sliding Menu (AKA Lavalamp)</title>
 <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="stylesheets/jquery.sliding-menu.css" type="text/css" media="screen" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 <!-- jQuery UI is Optional. Its only required if using easing functions. -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
@@ -17,6 +18,9 @@ jQuery(function(){
 </head>
 <body>
 <div id="Wrapper">
+  <div>
+    <img src="http://www.geektantra.com/wp-content/plugins/add-logo-to-admin/images/logo.png" alt="GeekTantra" />
+  </div>
   <div id="HorizontalSlidingMenu">
     <ul class="SlidingMenu Horizontal">
       <li><a href="#">First Link</a></li>
@@ -36,6 +40,62 @@ jQuery(function(){
       <li><a href="#">Fifth Link</a></li>
     </ul>
   </div>
+  <div id="Description">
+    <h1>Usage</h1>
+    Include the following in your &lt;head&gt; part of the html
+    <pre>&lt;link rel="stylesheet" href="stylesheets/jquery.sliding-menu.css" type="text/css" media="screen" /&gt;
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;!-- jQuery UI is Optional. Its only required if using easing functions. --&gt;
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="javascripts/jquery.sliding-menu.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+jQuery(function(){
+  jQuery('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+  jQuery('#VerticalSlidingMenu .SlidingMenu').slidingMenu({ initialOpacity: 0.5 });
+});
+&lt;/script&gt;</pre>
+    Use the following syntax in your &lt;body&gt; part of the html
+    <pre>  &lt;div id="HorizontalSlidingMenu"&gt;
+    &lt;ul class="SlidingMenu Horizontal"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;First Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Second Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Third Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Fourth Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Fifth Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div id="VerticalSlidingMenu"&gt;
+    &lt;ul class="SlidingMenu"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;First Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Second Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Third Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Fourth Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Fifth Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;</pre>
+  
+  You can easily customize the styling.
+  </div>
 </div>
+<div class="ValidXHTML">
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="images/valid-xhtml.gif" alt="Valid XHTML 1.0 Transitional" border="0" /></a>
+</div>
+
+<script type="text/javascript"> 
+  /* <![CDATA[ */
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  /* ]]> */
+</script> 
+<script type="text/javascript"> 
+  /* <![CDATA[ */
+  try {
+      var pageTracker = _gat._getTracker("UA-10628239-1");
+      pageTracker._trackPageview();
+  } 
+  catch (err) {
+  }
+  /* ]]> */
+</script> 
 </body>
 </html>
