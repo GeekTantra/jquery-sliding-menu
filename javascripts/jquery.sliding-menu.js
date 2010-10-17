@@ -11,7 +11,7 @@
     options.initial_height = jQuery(this).find("li:eq(0)").find("a:eq(0)").outerHeight();
     options.initial_width = jQuery(this).find("li:eq(0)").find("a:eq(0)").outerWidth();
     jQuery(this).css({
-      'position': 'relative',
+      'position': 'relative'
     });
     jQuery(this).find("li a").css({
       'display': 'inline-block',
